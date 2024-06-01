@@ -1,0 +1,175 @@
+{
+  "telemetry.telemetryLevel": "off",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.tabSize": 2,
+  "editor.lineNumbers": "relative",
+  "editor.fontFamily": "JetBrainsMono NF",
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.enableNeovim": true,
+  "vim.neovimUseConfigFile": true,
+  "vim.leader": " ",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<tab>"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["<S-tab>"],
+      "commands": ["workbench.action.previousEditor"]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["tab"],
+      "command": "selectNextSuggestion",
+      "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+    {
+      "before": ["shift", "tab"],
+      "command": "selectPrevSuggestion",
+      "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<Esc>"],
+      "commands": [":nohl"]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-c>": false,
+    "<C-x>": false,
+    "<C-v>": false,
+    "<C-z>": false,
+    "<C-y>": false
+  },
+  "explorer.confirmDelete": false,
+  "go.testFlags": ["-v"],
+  "go.lintFlags": ["--fast"],
+  "editor.cursorStyle": "underline",
+  "editor.cursorBlinking": "smooth",
+  "diffEditor.codeLens": true,
+  "workbench.layoutControl.enabled": false,
+
+  "window.commandCenter": false,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "all",
+  "workbench.startupEditor": "none",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "window.autoDetectColorScheme": true,
+  "window.clickThroughInactive": false,
+  "window.doubleClickIconToClose": true,
+  "workbench.preferredLightColorTheme": "Atom One Dark",
+  "workbench.settings.applyToAllProfiles": [
+    "workbench.preferredLightColorTheme"
+  ],
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.preferredDarkColorTheme": "Atom One Dark",
+  "workbench.preferredHighContrastColorTheme": "Tokyo Night Light",
+  "workbench.preferredHighContrastLightColorTheme": "Tokyo Night Light",
+  "workbench.editor.editorActionsLocation": "titleBar",
+  "editor.stickyScroll.enabled": false,
+  "workbench.activityBar.location": "top",
+  "workbench.colorCustomizations": {},
+  "workbench.tips.enabled": false,
+  "breadcrumbs.icons": false,
+  "breadcrumbs.symbolPath": "off",
+  "workbench.editor.autoLockGroups": {
+    "mainThreadWebview-simpleBrowser.view": false
+  },
+  "workbench.editor.openPositioning": "last",
+  "workbench.editor.scrollToSwitchTabs": true,
+  "workbench.editor.showTabs": "single",
+  "zenMode.hideLineNumbers": false,
+  "zenMode.centerLayout": false,
+  "zenMode.showTabs": "single",
+  "editor.accessibilitySupport": "off",
+  "cmake.configureOnOpen": true,
+  "cmake.cmakePath": "/opt/homebrew/bin/cmake",
+  "terminal.integrated.profiles.osx": {
+    "bash": {
+      "path": "bash",
+      "args": ["-l"],
+      "icon": "terminal-bash"
+    },
+    "zsh": {
+      "path": "zsh",
+      "args": ["-l"],
+      "icon": "terminal-bash"
+    },
+    "fish": {
+      "path": "/opt/homebrew/bin/fish",
+      "icon": "terminal-tmux"
+    }
+  },
+  "terminal.integrated.defaultProfile.osx": "fish",
+  "go.inlayHints.constantValues": true,
+  "go.useLanguageServer": true,
+  "go.inlayHints.parameterNames": true,
+  "go.inlayHints.compositeLiteralFields": true,
+  "go.coverShowCounts": true,
+  "go.lintOnSave": "workspace",
+  "cmake.showConfigureWithDebuggerNotification": false,
+  "go.formatTool": "gofumpt",
+  "go.survey.prompt": false,
+  "go.trace.server": "verbose",
+  "go.lintTool": "golangci-lint",
+  "terminal.external.osxExec": "Alacritty.app",
+  "terminal.explorerKind": "external",
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.environmentChangesIndicator": "on",
+  "terminal.integrated.tabs.defaultIcon": "symbol-event",
+  "terminal.integrated.inheritEnv": false,
+  "errorLens.enabled": false,
+  "cmake.showOptionsMovedNotification": false,
+  "grammarly.files.include": [
+    "**/README.md",
+    "**/readme.md",
+    "**/CONTRIBUTING.md"
+  ],
+  "errorLens.onSave": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "errorLens.enabledDiagnosticLevels": ["error"],
+  "errorLens.followCursor": "closestProblemMultiline",
+  "errorLens.delayMode": "debounce",
+  "errorLens.delay": 3000,
+  "[python]": {
+    "editor.defaultFormatter" :"ms-python.black-formatter",
+    "editor.formatOnSave": true,
+  },
+  "python.analysis.typeCheckingMode": "basic",
+  "aws.telemetry": false,
+  "vim.shell": "/opt/homebrew/bin/fish",
+  "C_Cpp.autocompleteAddParentheses": true,
+  "[go]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports":"always",
+      "source.fixAll":"always",
+    }
+  },
+  "files.associations": {
+    "*.js": "javascript"
+  },
+  "github.copilot.editor.enableAutoCompletions": true,
+  "stylelint.enable": false,
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+}
